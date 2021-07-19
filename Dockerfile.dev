@@ -1,0 +1,15 @@
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package.json .
+
+RUN npm install
+
+# i am commenting because we are now copying by using the .yml file .:/app
+COPY . .
+
+
+RUN chmod 777 node_modules
+
+CMD ["npm", "run", "start"]
