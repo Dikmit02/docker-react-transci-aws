@@ -15,9 +15,9 @@ deploy:
   region: "ap-south-1"
   app: "docker"
   env: "Docker-env"
-  bucket_name: "travis-ci-aws-bucket"
+  bucket_name: "elasticbeanstalk-ap-south-1-677933751647"
   bucket_path: "docker"
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_KEY"
+  secret_access_key: $AWS_SECRET_KEY
