@@ -7,4 +7,4 @@ before_install:
   - docker build -t diksha/docker-react-transci-aws -f Dockerfile.dev .
 
 script:
-  - docker run  diksha/docker-react-transci-aws npm run test -- --coverage
+  - docker run -e CI=true diksha/docker-react-transci-aws npm run test 
